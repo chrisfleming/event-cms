@@ -6,6 +6,12 @@ gem 'rails', '3.1.1'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'gravatar_image_tag', '1.0.0.pre2'
+
+group :development do
+  gem 'rspec-rails'
+  gem 'annotate', :git => 'git://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
+end
 
 
 # Gems used only for assets and not required
@@ -33,4 +39,7 @@ gem 'jquery-rails'
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+  gem 'rspec-rails'
+  gem 'webrat', '0.7.1'
+  gem 'factory_girl_rails', '1.0'
 end
